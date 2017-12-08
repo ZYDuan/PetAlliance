@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/ScrollView_comment"
+    tools:context="com.example.yd.sockettest1.Activity.TopicDetailActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/LinearLayout_comment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/royalblue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="评论区"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/TC_white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/title_imv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@android:drawable/ic_menu_add"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/fulltopic_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"></include>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ListView_comment"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_comment"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/whitesmoke"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+        android:id="@+id/comment_content"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:background="@null"
+        android:hint="输入评论内容"
+        android:maxLines="1"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/comment_send"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/royalblue"
+        android:text="发送"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+</RelativeLayout>
+        </LinearLayout>>
+
+</ScrollView>
+
+
+

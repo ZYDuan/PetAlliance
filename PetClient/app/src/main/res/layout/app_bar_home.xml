@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yd.sockettest1.Activity.HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@drawable/bg"/>
+
+        <com.example.yd.sockettest1.ui.RoundedImageView
+            android:id="@+id/head"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+
+            android:scaleType="centerCrop"
+            android:src="@drawable/head"
+            app:border_color="@color/white"
+            app:border_width="2dp"
+            app:corner_radius="25dip"
+            app:mutate_background="false"
+            app:oval="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"/>
+
+        <TextView
+            android:id="@+id/home_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="我是帅哥"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_below="@+id/head"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ly1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/bg"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/mc1_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/mc1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/mc1"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ly2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/bg"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/mc2_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/mc2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/mc2"
+                android:textStyle="bold"/>
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ly3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/bg"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    android:id="@+id/mc3_pic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/mc3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/mc3"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <include layout="@layout/content_home2"/>
+</android.support.design.widget.CoordinatorLayout>

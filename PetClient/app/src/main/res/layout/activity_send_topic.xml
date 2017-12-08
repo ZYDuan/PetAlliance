@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whitesmoke"
+    tools:context="com.example.yd.sockettest1.Activity.SendTopicActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/royalblue"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/textView_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="  取消 "
+            android:textSize="20sp"
+            android:textColor="@color/whitesmoke"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="发布话题"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/TC_white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_send"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text=" 发送  "
+            android:textSize="20sp"
+            android:textColor="@color/whitesmoke"
+            android:gravity="center"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text=" 话题名:  "
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:maxLines="1"
+        android:background="@color/white"
+        android:id="@+id/editView_name"
+         />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editView_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="尽情发挥..."
+        android:lines="10"
+        android:maxLines="10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@color/whitesmoke"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:padding="10dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"></GridView>
+
+</LinearLayout>

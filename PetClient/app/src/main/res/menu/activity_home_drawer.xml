@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dog_res"
+            android:icon="@drawable/dog_house"
+            android:title="宠物登记"/>
+        <item
+            android:id="@+id/dog"
+            android:icon="@drawable/dog"
+            android:title="我要寄养"/>
+        <item
+            android:id="@+id/news"
+            android:icon="@drawable/news"
+            android:title="消息列表"/>
+        <item
+            android:id="@+id/order"
+            android:icon="@drawable/order"
+            android:title="我的订单"/>
+
+        <item
+            android:id="@+id/dicuss"
+            android:icon="@drawable/dog_house"
+            android:title="宠物社区"/>
+
+        <item
+            android:id="@+id/home_res"
+            android:icon="@drawable/dog_home"
+            android:title="申请宠物家庭"/>
+    </group>
+
+    <group
+        android:checkableBehavior="none"
+    android:id="@+id/group_settings">
+
+            <item
+                android:id="@+id/person"
+                android:icon="@drawable/person"
+                android:title="我的宠物"/>
+            <item
+                android:id="@+id/cancel"
+                android:icon="@drawable/cancel"
+                android:title="注销账号"/>
+
+    </group>
+
+</menu>

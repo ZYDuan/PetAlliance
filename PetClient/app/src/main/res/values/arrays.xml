@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pettype">
+        <item> </item>
+        <item>狗</item>
+        <item>猫</item>
+        <item>鸟</item>
+        <item>龟</item>
+        <item>仓鼠</item>
+    </string-array>
+    <string-array name="petsex">
+        <item> </item>
+        <item>GG</item>
+        <item>MM</item>
+    </string-array>
+    <string-array name="jy">
+        <item> </item>
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+</resources>

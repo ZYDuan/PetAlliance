@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFEF">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请您进行评价或反馈"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000001"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/Ffamily"
+        android:background="@drawable/button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="对寄养家庭进行评价"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp" />
+    <Button
+        android:id="@+id/Fsystem"
+        android:background="@drawable/button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="对该系统进行反馈"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"/>
+    <Button
+        android:id="@+id/Fselect"
+        android:background="@drawable/button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="暂无评价或反馈想发表"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"/>
+</LinearLayout>

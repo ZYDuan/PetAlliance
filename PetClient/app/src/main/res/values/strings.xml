@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">爱宠部落</string>
+    <string name="title_activity_home">爱宠部落</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="app_explain">先上传位置，可搜索到该上传信息</string>
+    <string name="upload">上传位置</string>
+    <string name="search">搜索附近用户</string>
+    <string name="Title">寄养家庭信息</string>
+
+    <string name="mc1">有一只萌宠是一种怎么样的体验？知乎给你不一样的体验....</string>
+    <string name="mc2">萌宠去哪儿了，打造全球最大最密集的卖萌宠物俱乐部...</string>
+    <string name="mc3">萌宠街宠物网是一家专业的宠物商城,宠物猫、宠物狗和奇异宠物用品在线导购网店...</string>
+</resources>
